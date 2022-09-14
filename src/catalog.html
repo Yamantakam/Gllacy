@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Konnichiwaeien, HTML Academy, Gllacy, Глэйси,
+  Магазин Глэйси, сливочное, щербеты, фруктовый лед, мелорин, крем-брюле, 
+  пломбир, с джемом, с ягодами, клубничное, лимонное, ванильное, шоколадное">
+  <meta name="description" content="Магазин Глейси — это онлайн и офлайн магазин 
+  по продаже мороженого собственного производства на развес">
+  <meta name="author" content="https://github.com/Konnichiwaeien">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#849d8f">
+  <title>Gllacy | Каталог</title>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+
+
+
+
+
+
+<body>
+  <div class="main-container">
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo" href="index.html" aria-label="Gllacy">
+          <svg class="main-header__icon" width="154" height="64" aria-hidden="true">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+
+
+        <nav class="main-header__nav  nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link  nav__link--current" href="catalog.html">Каталог</a>
+              <ul class="nav__list  nav__list--sub">
+                <li class="nav__item">
+                  <a class="nav__link" href="index.html#promo">Новинки</a>
+                </li>
+
+                <li class="nav__item">
+                  <a class="nav__link">Сливочное</a>
+                </li>
+
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Щербеты</a>
+                </li>
+
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Фруктовый лед</a>
+                </li>
+
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="index.html#contacts">Доставка и оплата</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="index.html#features">О Компании</a>
+            </li>
+          </ul>
+
+
+          <ul class="nav__list  nav__list--user">
+            <li class="nav__item">
+              <a class="nav__link" href="#" aria-label="Поиск по сайту">
+                <svg class="nav__icon" width="17" height="17" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </a>
+
+              <div class="popup  popup--search">
+                <form class="form  form--search" action="#" method="get">
+                  <p class="form__group">
+                    <label class="form__label">
+                      <input class="form__field  form__search" type="search" name="search" required>
+                      <span class="form__capt">Что ищем?</span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                <svg class="nav__icon" width="21" height="19" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#login"></use>
+                </svg>
+                Вход
+              </a>
+
+              <div class="popup  popup--login">
+                <form class="form  form--login" action="#" method="post">
+                  <p class="form__group">
+                    <label class="form__label">
+                      <input class="form__field  form__email" type="text" name="email" required>
+                      <span class="form__capt">Электронная почта</span>
+                    </label>
+                  </p>
+
+                  <p class="form__group">
+                    <label class="form__label">
+                      <input class="form__field" type="password" name="password" required>
+                      <span class="form__capt">Пароль</span>
+                    </label>
+                  </p>
+
+                  <p class="form__group">
+                    <button class="form__btn  btn  btn--main" type="submit">Войти</button>
+                    <a class="form__link" href="#">Забыли пароль?</a>
+                    <a class="form__link" href="#">Новая регистрация</a>
+                  </p>
+                </form>
+              </div>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#" aria-label="Корзина">
+                <svg class="nav__icon" width="21" height="20" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#cart"></use>
+                </svg>
+                2 товара
+              </a>
+
+              <div class="popup  popup--cart">
+                <form class="form  form--cart" action="#" method="post">
+                  <table class="form__table">
+                    <caption class="visually-hidden">Товары в корзине:</caption>
+                    <tbody class="form__tbody">
+                      <tr class="form__row">
+                        <td class="form__cell">
+                          <button class="form__btn  form__del  btn" type="button" aria-label="Удалить"></button>
+                        </td>
+                        <td class="form__cell">
+                          <img class="form__pic" src="img/product-1.png" width="33" height="33" alt="">
+                          Пломбир с апельсиновым джемом
+                        </td>
+                        <td class="form__cell">
+                          1,5 кг х
+                          <span class="form__accent">200 руб.</span>
+                        </td>
+                        <td class="form__cell">
+                          300 руб.
+                        </td>
+                      </tr>
+
+                      <tr class="form__row">
+                        <td class="form__cell">
+                          <button class="form__btn  form__del  btn" type="button" aria-label="Удалить"></button>
+                        </td>
+                        <td class="form__cell">
+                          <img class="form__pic" src="img/product-3.png" width="33" height="33" alt="">
+                          Клубничный пломбир с присыпкой из белого шоколада
+                        </td>
+                        <td class="form__cell">
+                          1,5 кг х
+                          <span class="form__accent">300 руб.</span>
+                        </td>
+                        <td class="form__cell">
+                          4500 руб.
+                        </td>
+                      </tr>
+                    </tbody>
+
+                    <tfoot class="form__tfoot">
+                      <tr class="form__row">
+                        <td class="form__cell" colspan="4">
+                          <strong class="form__total">Итого: 750 руб</strong>
+                        </td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <button class="form__btn  form__send  btn  btn--main" type="submit">Оформить заказ</button>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+
+        <p class="main-header__descr">
+          С 10 до 20, ежедневно
+          <strong class="main-header__tel">
+            8 812 450-25-25
+          </strong>
+        </p>
+      </div>
+    </header>
+
+
+
+
+
+
+    <main class="main">
+      <div class="main__wrapper">
+        <header class="main__header">
+          <h1 class="main__title">Сливочное мороженое</h1>
+          <ul class="main__breadcrumbs  breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Каталог</a>
+            </li>
+
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link  breadcrumbs__link--current">Сливочное</a>
+            </li>
+          </ul>
+        </header>
+
+
+
+
+
+        <form class="form  form--filter" action="#" method="post">
+          <fieldset class="form__group">
+            <legend class="form__title">Сортировка:</legend>
+            <div class="form__inner">
+              <p class="form__subgroup">
+                <select class="form__select" name="sort">
+                  <option class="form__option" value="poppular">по популярности</option>
+                  <option class="form__option" value="low">сначала недорогие</option>
+                  <option class="form__option" value="high">сначала дорогие</option>
+                  <option class="form__option" value="fat">по жирности</option>
+                </select>
+              </p>
+            </div>
+          </fieldset>
+
+
+          <fieldset class="form__group">
+            <legend class="form__title">Цена: 100 руб. – 500 руб.</legend>
+            <div class="form__inner">
+              <div class="form__range">
+                <div class="form__controls">
+                  <button class="form__control  form__control--min  btn" type="button"></button>
+                  <button class="form__control  form__control--max  btn" type="button"></button>
+                  <div class="form__scale">
+                    <div class="form__bar"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+
+          <fieldset class="form__group">
+            <legend class="form__title">Жирность:</legend>
+            <div class="form__inner">
+              <p class="form__subgroup">
+                <input class="form__option  visually-hidden" type="radio" name="fat" id="0%" value="0%">
+                <label class="form__label" for="0%">0%</label>
+              </p>
+
+              <p class="form__subgroup">
+                <input class="form__option  visually-hidden" type="radio" name="fat" id="<10%" value="<10%" checked>
+                <label class="form__label" for="<10%">до 10%</label>
+              </p>
+
+              <p class="form__subgroup">
+                <input class="form__option  visually-hidden" type="radio" name="fat" id="<30%" value="<30%">
+                <label class="form__label" for="<30%">до 30%</label>
+              </p>
+
+              <p class="form__subgroup">
+                <input class="form__option  visually-hidden" type="radio" name="fat" id=">30%" value=">30%">
+                <label class="form__label" for=">30%">выше 30%</label>
+              </p>
+            </div>
+          </fieldset>
+
+
+          <fieldset class="form__group">
+            <legend class="form__title">Наполнители:</legend>
+            <div class="form__inner">
+              <p class="form__subgroup">
+                <input class="form__option  visually-hidden" type="checkbox" name="chocolate" id="chocolate" checked>
+                <label class="form__label" for="chocolate">шоколадные</label>
+              </p>
+
+              <p class="form__subgroup">
+                <input class="form__option  visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
+                <label class="form__label" for="sugar">сахарные присыпки</label>
+              </p>
+
+              <p class="form__subgroup">
+                <input class="form__option  visually-hidden" type="checkbox" name="fruits" id="fruits">
+                <label class="form__label" for="fruits">фрукты</label>
+              </p>
+
+              <p class="form__subgroup">
+                <input class="form__option  visually-hidden" type="checkbox" name="syrups" id="syrups">
+                <label class="form__label" for="syrups">сиропы</label>
+              </p>
+
+              <p class="form__subgroup">
+                <input class="form__option  visually-hidden" type="checkbox" name="jams" id="jams">
+                <label class="form__label" for="jams">джемы</label>
+              </p>
+            </div>
+          </fieldset>
+          <button class="form__btn  form__send  btn" type="submit">Применить</button>
+        </form>
+
+
+
+
+
+        <section class="catalog">
+          <h2 class="visually-hidden">Товары</h2>
+          <section class="catalog__item  product">
+            <h3 class="product__title">
+              <a class="product__link" href="#">
+                Сливочное с апельсиновым джемом и цитрусовой стружкой
+              </a>
+            </h3>
+
+            <p class="product__info">
+              <img class="product__pic" src="img/product-1.png" width="267" height="267" alt="">
+              <svg class="product__icon" width="61" height="61" role="img">
+                <title>Хит</title>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#hit"></use>
+              </svg>
+              <strong class="product__price">
+                <span class="visually-hidden">Стоимость:</span>
+                <span class="product__accent">310</span>
+                <svg class="product__icon" width="31" height="36" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#ruble"></use>
+                </svg>
+                /кг
+              </strong>
+            </p>
+
+            <a class="product__btn  btn  btn--main" href="#">Быстрый просмотр</a>
+          </section>
+
+
+          <section class="catalog__item  product">
+            <h3 class="product__title">
+              <a class="product__link" href="#">
+                Сливочно-кофейное с кусочками шоколада
+              </a>
+            </h3>
+
+            <p class="product__info">
+              <img class="product__pic" src="img/product-2.png" width="267" height="267" alt="">
+              <svg class="product__icon" width="61" height="61" role="img">
+                <title>Хит</title>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#hit"></use>
+              </svg>
+              <strong class="product__price">
+                <span class="visually-hidden">Стоимость:</span>
+                <span class="product__accent">380</span>
+                <svg class="product__icon" width="31" height="36" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#ruble"></use>
+                </svg>
+                /кг
+              </strong>
+            </p>
+
+            <a class="product__btn  btn  btn--main" href="#">Быстрый просмотр</a>
+          </section>
+
+
+          <section class="catalog__item  product">
+            <h3 class="product__title">
+              <a class="product__link" href="#">
+                Сливочно-клубничное с присыпкой из белого шоколада
+              </a>
+            </h3>
+
+            <p class="product__info">
+              <img class="product__pic" src="img/product-3.png" width="267" height="267" alt="">
+              <svg class="product__icon" width="61" height="61" role="img">
+                <title>Хит</title>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#hit"></use>
+              </svg>
+              <strong class="product__price">
+                <span class="visually-hidden">Стоимость:</span>
+                <span class="product__accent">355</span>
+                <svg class="product__icon" width="31" height="36" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#ruble"></use>
+                </svg>
+                /кг
+              </strong>
+            </p>
+
+            <a class="product__btn  btn  btn--main" href="#">Быстрый просмотр</a>
+          </section>
+
+
+          <section class="catalog__item  product">
+            <h3 class="product__title">
+              <a class="product__link" href="#">
+                Сливочное крем-брюле с карамельной подливкой
+              </a>
+            </h3>
+
+            <p class="product__info">
+              <img class="product__pic" src="img/product-4.png" width="267" height="267" alt="">
+              <svg class="product__icon" width="61" height="61" role="img">
+                <title>Хит</title>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#hit"></use>
+              </svg>
+              <strong class="product__price">
+                <span class="visually-hidden">Стоимость:</span>
+                <span class="product__accent">415</span>
+                <svg class="product__icon" width="31" height="36" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#ruble"></use>
+                </svg>
+                /кг
+              </strong>
+            </p>
+
+            <a class="product__btn  btn  btn--main" href="#">Быстрый просмотр</a>
+          </section>
+
+
+          <section class="catalog__item  product">
+            <h3 class="product__title">
+              <a class="product__link" href="#">
+                Сливочное с брусничным джемом
+              </a>
+            </h3>
+
+            <p class="product__info">
+              <img class="product__pic" src="img/product-5.png" width="267" height="267" alt="">
+              <svg class="product__icon" width="61" height="61" role="img">
+                <title>Хит</title>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#hit"></use>
+              </svg>
+              <strong class="product__price">
+                <span class="visually-hidden">Стоимость:</span>
+                <span class="product__accent">325</span>
+                <svg class="product__icon" width="31" height="36" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#ruble"></use>
+                </svg>
+                /кг
+              </strong>
+            </p>
+
+            <a class="product__btn  btn  btn--main" href="#">Быстрый просмотр</a>
+          </section>
+
+
+          <section class="catalog__item  product">
+            <h3 class="product__title">
+              <a class="product__link" href="#">
+                Сливочно-черничное с цельными ягодами черники
+              </a>
+            </h3>
+
+            <p class="product__info">
+              <img class="product__pic" src="img/product-6.png" width="267" height="267" alt="">
+              <svg class="product__icon" width="61" height="61" role="img">
+                <title>Хит</title>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#hit"></use>
+              </svg>
+              <strong class="product__price">
+                <span class="visually-hidden">Стоимость:</span>
+                <span class="product__accent">410</span>
+                <svg class="product__icon" width="31" height="36" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#ruble"></use>
+                </svg>
+                /кг
+              </strong>
+            </p>
+
+            <a class="product__btn  btn  btn--main" href="#">Быстрый просмотр</a>
+          </section>
+
+
+          <section class="catalog__item  product">
+            <h3 class="product__title">
+              <a class="product__link" href="#">
+                Сливочно-лимонное с карамельной присыпкой
+              </a>
+            </h3>
+
+            <p class="product__info">
+              <img class="product__pic" src="img/product-7.png" width="267" height="267" alt="">
+              <svg class="product__icon" width="61" height="61" role="img">
+                <title>Хит</title>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#hit"></use>
+              </svg>
+              <strong class="product__price">
+                <span class="visually-hidden">Стоимость:</span>
+                <span class="product__accent">375</span>
+                <svg class="product__icon" width="31" height="36" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#ruble"></use>
+                </svg>
+                /кг
+              </strong>
+            </p>
+
+            <a class="product__btn  btn  btn--main" href="#">Быстрый просмотр</a>
+          </section>
+
+
+          <section class="catalog__item  product">
+            <h3 class="product__title">
+              <a class="product__link" href="#">
+                Сливочное с шоколадной стружкой
+              </a>
+            </h3>
+
+            <p class="product__info">
+              <img class="product__pic" src="img/product-8.png" width="267" height="267" alt="">
+              <svg class="product__icon" width="61" height="61" role="img">
+                <title>Хит</title>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#hit"></use>
+              </svg>
+              <strong class="product__price">
+                <span class="visually-hidden">Стоимость:</span>
+                <span class="product__accent">320</span>
+                <svg class="product__icon" width="31" height="36" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#ruble"></use>
+                </svg>
+                /кг
+              </strong>
+            </p>
+
+            <a class="product__btn  btn  btn--main" href="#">Быстрый просмотр</a>
+          </section>
+
+
+          <section class="catalog__item  product">
+            <h3 class="product__title">
+              <a class="product__link" href="#">
+                Сливочно-ванильное с кусочками шоколада
+              </a>
+            </h3>
+
+            <p class="product__info">
+              <img class="product__pic" src="img/product-9.png" width="267" height="267" alt="">
+              <svg class="product__icon" width="61" height="61" role="img">
+                <title>Хит</title>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#hit"></use>
+              </svg>
+              <strong class="product__price">
+                <span class="visually-hidden">Стоимость:</span>
+                <span class="product__accent">440</span>
+                <svg class="product__icon" width="31" height="36" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#ruble"></use>
+                </svg>
+                /кг
+              </strong>
+            </p>
+
+            <a class="product__btn  btn  btn--main" href="#">Быстрый просмотр</a>
+          </section>
+
+
+          <section class="catalog__item  product">
+            <h3 class="product__title">
+              <a class="product__link" href="#">
+                Сливочноe с ментоловым сиропом
+              </a>
+            </h3>
+
+            <p class="product__info">
+              <img class="product__pic" src="img/product-10.png" width="267" height="267" alt="">
+              <svg class="product__icon" width="61" height="61" role="img">
+                <title>Хит</title>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#hit"></use>
+              </svg>
+              <strong class="product__price">
+                <span class="visually-hidden">Стоимость:</span>
+                <span class="product__accent">435</span>
+                <svg class="product__icon" width="31" height="36" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#ruble"></use>
+                </svg>
+                /кг
+              </strong>
+            </p>
+
+            <a class="product__btn  btn  btn--main" href="#">Быстрый просмотр</a>
+          </section>
+
+
+          <section class="catalog__item  product">
+            <h3 class="product__title">
+              <a class="product__link" href="#">
+                Сливочное с кусочками черного шоколада
+              </a>
+            </h3>
+
+            <p class="product__info">
+              <img class="product__pic" src="img/product-11.png" width="267" height="267" alt="">
+              <svg class="product__icon" width="61" height="61" role="img">
+                <title>Хит</title>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#hit"></use>
+              </svg>
+              <strong class="product__price">
+                <span class="visually-hidden">Стоимость:</span>
+                <span class="product__accent">355</span>
+                <svg class="product__icon" width="31" height="36" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#ruble"></use>
+                </svg>
+                /кг
+              </strong>
+            </p>
+
+            <a class="product__btn  btn  btn--main" href="#">Быстрый просмотр</a>
+          </section>
+
+
+          <section class="catalog__item  product">
+            <h3 class="product__title">
+              <a class="product__link" href="#">
+                Сливочное с мятным сиропом
+              </a>
+            </h3>
+
+            <p class="product__info">
+              <img class="product__pic" src="img/product-12.png" width="267" height="267" alt="">
+              <svg class="product__icon" width="61" height="61" role="img">
+                <title>Хит</title>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#hit"></use>
+              </svg>
+              <strong class="product__price">
+                <span class="visually-hidden">Стоимость:</span>
+                <span class="product__accent">420</span>
+                <svg class="product__icon" width="31" height="36" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#ruble"></use>
+                </svg>
+                /кг
+              </strong>
+            </p>
+
+            <a class="product__btn  btn  btn--main" href="#">Быстрый просмотр</a>
+          </section>
+
+
+
+          <ul class="catalog__paginator  paginator">
+            <li class="paginator__item">
+              <a class="paginator__link  paginator__link--prev  paginator__link--disabled" href="#">Предыдущая</a>
+            </li>
+
+            <li class="paginator__item">
+              <a class="paginator__link  paginator__link--current" href="#">1</a>
+            </li>
+
+            <li class="paginator__item">
+              <a class="paginator__link" href="#">2</a>
+            </li>
+
+            <li class="paginator__item">
+              <a class="paginator__link" href="#">3</a>
+            </li>
+
+            <li class="paginator__item">
+              <a class="paginator__link" href="#">4</a>
+            </li>
+
+            <li class="paginator__item">
+              <a class="paginator__link" href="#">5</a>
+            </li>
+
+            <li class="paginator__item">
+              <a class="paginator__link  paginator__link--next" href="#">Следующая</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+
+
+
+
+
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <ul class="main-footer__social  social">
+          <li class="social__item">
+            <a class="social__link  btn" href="#" aria-label="Twitter" target="_blank">
+              <svg class="social__icon" width="32" height="32" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#tw"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link  btn" href="#" aria-label="Instagram" target="_blank">
+              <svg class="social__icon" width="32" height="32" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#in"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link  btn" href="#" aria-label="Facebook" target="_blank">
+              <svg class="social__icon" width="32" height="32" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link  btn" href="#" aria-label="Vkontakte" target="_blank">
+              <svg class="social__icon" width="32" height="32" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+
+        <ul class="main-footer__nav">
+          <li class="main-footer__item">
+            <a class="main-footer__link  main-footer__link--feedback" href="#">
+              <svg class="main-footer__icon" width="15" height="13" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#heart"></use>
+              </svg>
+              Для поставщиков
+            </a>
+          </li>
+
+          <li class="main-footer__item">
+            <a class="main-footer__link" href="#">
+              Наши документы
+            </a>
+          </li>
+
+          <li class="main-footer__item">
+            <a class="main-footer__link" href="#">
+              О производстве
+            </a>
+          </li>
+
+          <li class="main-footer__item">
+            <a class="main-footer__link" href="#">
+              Экологические стандарты
+            </a>
+          </li>
+        </ul>
+
+
+        <p class="main-footer__copyright">
+          <a class="main-footer__logo" href="https://htmlacademy.ru/" aria-label="HTML Academy" target="_blank">
+            <svg class="main-footer__icon" width="108" height="39" aria-hidden="true">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#academy"></use>
+            </svg>
+          </a>
+
+          <strong class="main-footer__imp">Разработано:</strong>
+          <a class="main-footer__link" href="https://github.com/Konnichiwaeien" target="_blank">
+            Konnichiwaeien © 2017
+          </a>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+
+
+  <section class="popup  popup--feedback">
+    <h2 class="visually-hidden">Обратная связь</h2>
+    <p class="popup__descr">Мы обязательно вам ответим!</p>
+    <form class="form  form--feedback" action="#" method="post">
+      <p class="form__group">
+        <label class="form__label">
+          <input class="form__field  form__name" type="text" name="name" required>
+          <span class="form__capt">Как вас зовут?</span>
+        </label>
+      </p>
+
+      <p class="form__group">
+        <label class="form__label">
+          <input class="form__field  form__email" type="text" name="email" required>
+          <span class="form__capt">Ваша почта для ответа?</span>
+        </label>
+      </p>
+
+      <p class="form__group">
+        <label class="form__label">
+          <textarea class="form__field  form__message" name="message" required></textarea>
+          <span class="form__capt">Напишите что-нибудь...</span>
+        </label>
+      </p>
+
+      <p class="form__group">
+        <button class="form__btn  btn  btn--main" type="submit">Отправить</button>
+      </p>
+    </form>
+    <button class="popup__btn  popup__close  btn" type="button" aria-label="Закрыть"></button>
+  </section>
+  <div class="overlay"></div>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

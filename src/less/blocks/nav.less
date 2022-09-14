@@ -1,0 +1,93 @@
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.nav__list{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  padding-top: 28px;
+  &--sub{
+    position: absolute;
+    top: 32px;
+    left: -8px;
+    z-index: 1;
+    width: 143px;
+    padding: 0;
+    border-radius: 5px;
+    background: @GRAY;
+    color: #323232;
+    opacity: 1;
+    transition: @primaryTrans;
+  }
+  &--user{
+    width: 267px;
+  }
+}
+
+.nav__item{
+  position: relative;
+  margin-right: 2px;
+}
+
+.nav__link{
+  position: relative;
+  padding: 6px 13px;
+  border-radius: 15px;
+  .font(short; @primaryFS; 18px; 700);
+  transition: @primaryTrans;
+  &::before{
+    .def-pseudo();
+    bottom: 6px;
+    left: 13px;
+    right: 13px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: @primaryTrans;
+  }
+  &[href]:hover,
+  &[href]:focus{
+    background: @GRAY;
+    color: @BLACK-LIGHT;  
+    &::before{
+      // width: 0;
+    }
+  }
+}
+
+.nav__item:hover .nav__list--sub,
+.nav__item:focus .nav__list--sub{
+  opacity: 1;
+}
+ .nav__item:focus-within .nav__list--sub {
+        opacity: 1;
+    }
+
+.nav__list--sub{
+  overflow: hidden;
+  .nav__item{
+    width: 100%;
+    margin: 0;
+  }
+  .nav__link{
+    display: block;
+    .font(short; 14px; 16px; @primaryFW);
+    border-radius: 0;
+    &:hover,
+    &:focus{
+      background: #fbded7;
+    }
+    &--accent{
+      font-weight: 700;
+      &::before{
+        background: #d1d0ce;
+        bottom: 1px;
+      }
+    }
+  }
+}
+
